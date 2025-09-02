@@ -5,8 +5,10 @@ import { CopilotKitCSSProperties, CopilotSidebar } from "@copilotkit/react-ui";
 import { useState } from "react";
 
 export default function CopilotKitPage() {
+  const runtimeUrl = process.env.NEXT_PUBLIC_COPILOTKIT_RUNTIME_URL || "/api/copilotkit";
+  
   return (
-    <CopilotKit runtimeUrl="/api/copilotkit" agent="sample_agent">
+    <CopilotKit runtimeUrl={runtimeUrl} agent="sample_agent">
       <CopilotKitContent />
     </CopilotKit>
   );
