@@ -6,9 +6,7 @@ import {
   copilotKitEndpoint,
 } from "@copilotkit/runtime";
 
-const serviceAdapter = new OpenAIAdapter({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+const serviceAdapter = new OpenAIAdapter();
 
 console.log("Environment variables:", {
   LANGGRAPH_DEPLOYMENT_URL: process.env.LANGGRAPH_DEPLOYMENT_URL,
