@@ -70,6 +70,7 @@ type AgentState = {
   pending_tool_calls?: Array<{
     name: string;
     args: any;
+    description?: string;
   }>;
 }
 
