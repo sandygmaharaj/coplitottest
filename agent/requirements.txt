@@ -12,5 +12,5 @@ asyncpg
 aiohttp
 mcp
 pydantic
-langgraph
+langgraph<=0.5.0
 langsmith
